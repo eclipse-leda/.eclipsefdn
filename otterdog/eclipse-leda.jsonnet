@@ -89,6 +89,10 @@ orgs.newOrg('eclipse-leda') {
       secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
     },
+    orgs.newRepo('leda-contrib-vscode-extensions') {
+      allow_update_branch: false,
+      web_commit_signoff_required: false,
+    },
     orgs.newRepo('leda-distro') {
       allow_update_branch: false,
       description: "Eclipse Leda provides a Yocto-based build setup for SDV.EDGE components ",

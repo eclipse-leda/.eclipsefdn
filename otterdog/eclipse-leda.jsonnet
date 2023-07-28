@@ -18,6 +18,9 @@ orgs.newOrg('eclipse-leda') {
   _repositories+:: [
     orgs.newRepo('eclipse-leda.github.io') {
       allow_update_branch: false,
+      gh_pages_build_type: "legacy",
+      gh_pages_source_branch: "gh_pages",
+      gh_pages_source_path: "/",
       secret_scanning: "disabled",
       secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
@@ -33,6 +36,9 @@ orgs.newOrg('eclipse-leda') {
     orgs.newRepo('leda') {
       allow_update_branch: false,
       description: "Documentation - Eclipse Leda provides a Yocto-based build setup for SDV.EDGE components ",
+      gh_pages_build_type: "legacy",
+      gh_pages_source_branch: "gh_pages",
+      gh_pages_source_path: "/",
       has_projects: false,
       has_wiki: false,
       homepage: "https://eclipse-leda.github.io/leda/",
@@ -96,6 +102,7 @@ orgs.newOrg('eclipse-leda') {
     orgs.newRepo('leda-distro') {
       allow_update_branch: false,
       description: "Eclipse Leda provides a Yocto-based build setup for SDV.EDGE components ",
+      gh_pages_build_type: "workflow",
       has_discussions: true,
       homepage: "https://eclipse-leda.github.io/leda/",
       secret_scanning: "disabled",

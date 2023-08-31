@@ -7,8 +7,6 @@ orgs.newOrg('eclipse-leda') {
     dependabot_security_updates_enabled_for_new_repositories: false,
     description: "",
     members_can_change_project_visibility: false,
-    members_can_change_repo_visibility: true,
-    members_can_delete_repositories: true,
     name: "Eclipse Leda",
     packages_containers_internal: false,
     readers_can_create_discussions: true,

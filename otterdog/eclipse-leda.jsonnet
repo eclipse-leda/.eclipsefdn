@@ -22,8 +22,6 @@ orgs.newOrg('eclipse-leda') {
       gh_pages_build_type: "legacy",
       gh_pages_source_branch: "gh_pages",
       gh_pages_source_path: "/",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       environments: [
         orgs.newEnvironment('github-pages') {
@@ -43,8 +41,6 @@ orgs.newOrg('eclipse-leda') {
       has_projects: false,
       has_wiki: false,
       homepage: "https://eclipse-leda.github.io/leda/",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       topics+: [
         "automotive",
         "software-defined-vehicle",
@@ -58,29 +54,21 @@ orgs.newOrg('eclipse-leda') {
     orgs.newRepo('leda-contrib-cloud-connector') {
       allow_update_branch: false,
       description: "SDV Cloud Connector for Azure IoT Hub",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
     },
     orgs.newRepo('leda-contrib-container-update-agent') {
       allow_update_branch: false,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
     },
     orgs.newRepo('leda-contrib-otel') {
       allow_update_branch: false,
       description: "OpenTelemetry Exporter for Leda",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
     },
     orgs.newRepo('leda-contrib-self-update-agent') {
       allow_update_branch: false,
       description: "Eclipse Leda - Self Update Agent (SUA)",
       homepage: "https://eclipse-leda.github.io/leda/",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       topics+: [
         "automotive",
         "embedded",
@@ -92,8 +80,6 @@ orgs.newOrg('eclipse-leda') {
     orgs.newRepo('leda-contrib-vehicle-update-manager') {
       allow_update_branch: false,
       description: "Vehicle Update Manager (VUM)",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
     },
     orgs.newRepo('leda-contrib-vscode-extensions') {
@@ -106,8 +92,6 @@ orgs.newOrg('eclipse-leda') {
       gh_pages_build_type: "workflow",
       has_discussions: true,
       homepage: "https://eclipse-leda.github.io/leda/",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       topics+: [
         "automotive",
         "edge-computing",
@@ -133,8 +117,6 @@ orgs.newOrg('eclipse-leda') {
       has_projects: false,
       has_wiki: false,
       homepage: "https://eclipse-leda.github.io/leda/docs/app-deployment/",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       topics+: [
         "eclipse",
         "eclipse-sdv",
@@ -147,8 +129,6 @@ orgs.newOrg('eclipse-leda') {
       allow_update_branch: false,
       description: "Convenience scripts for Eclipse Leda quickstart tutorials",
       homepage: "https://eclipse-leda.github.io/leda/",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       topics+: [
         "automotive",
         "eclipse",
@@ -160,8 +140,6 @@ orgs.newOrg('eclipse-leda') {
       allow_update_branch: false,
       description: "Yocto / OpenEmbedded Meta-Layers for Eclipse SDV components",
       homepage: "https://eclipse-leda.github.io/leda/",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       topics+: [
         "bitbake",
         "eclipse-sdv",

@@ -8,6 +8,7 @@ orgs.newOrg('eclipse-leda') {
     members_can_change_project_visibility: false,
     name: "Eclipse Leda",
     packages_containers_internal: false,
+    plan: "team",
     readers_can_create_discussions: true,
     two_factor_requirement: false,
     web_commit_signoff_required: false,
@@ -18,7 +19,9 @@ orgs.newOrg('eclipse-leda') {
   },
   _repositories+:: [
     orgs.newRepo('eclipse-leda.github.io') {
+      allow_merge_commit: true,
       allow_update_branch: false,
+      delete_branch_on_merge: false,
       gh_pages_build_type: "legacy",
       gh_pages_source_branch: "gh_pages",
       gh_pages_source_path: "/",
@@ -33,7 +36,9 @@ orgs.newOrg('eclipse-leda') {
       ],
     },
     orgs.newRepo('leda') {
+      allow_merge_commit: true,
       allow_update_branch: false,
+      delete_branch_on_merge: false,
       description: "Documentation - Eclipse Leda provides a Yocto-based build setup for SDV.EDGE components ",
       gh_pages_build_type: "legacy",
       gh_pages_source_branch: "gh_pages",
@@ -52,21 +57,29 @@ orgs.newOrg('eclipse-leda') {
       ],
     },
     orgs.newRepo('leda-contrib-cloud-connector') {
+      allow_merge_commit: true,
       allow_update_branch: false,
+      delete_branch_on_merge: false,
       description: "SDV Cloud Connector for Azure IoT Hub",
       web_commit_signoff_required: false,
     },
     orgs.newRepo('leda-contrib-container-update-agent') {
+      allow_merge_commit: true,
       allow_update_branch: false,
+      delete_branch_on_merge: false,
       web_commit_signoff_required: false,
     },
     orgs.newRepo('leda-contrib-otel') {
+      allow_merge_commit: true,
       allow_update_branch: false,
+      delete_branch_on_merge: false,
       description: "OpenTelemetry Exporter for Leda",
       web_commit_signoff_required: false,
     },
     orgs.newRepo('leda-contrib-self-update-agent') {
+      allow_merge_commit: true,
       allow_update_branch: false,
+      delete_branch_on_merge: false,
       description: "Eclipse Leda - Self Update Agent (SUA)",
       homepage: "https://eclipse-leda.github.io/leda/",
       topics+: [
@@ -78,16 +91,22 @@ orgs.newOrg('eclipse-leda') {
       web_commit_signoff_required: false,
     },
     orgs.newRepo('leda-contrib-vehicle-update-manager') {
+      allow_merge_commit: true,
       allow_update_branch: false,
+      delete_branch_on_merge: false,
       description: "Vehicle Update Manager (VUM)",
       web_commit_signoff_required: false,
     },
     orgs.newRepo('leda-contrib-vscode-extensions') {
+      allow_merge_commit: true,
       allow_update_branch: false,
+      delete_branch_on_merge: false,
       web_commit_signoff_required: false,
     },
     orgs.newRepo('leda-distro') {
+      allow_merge_commit: true,
       allow_update_branch: false,
+      delete_branch_on_merge: false,
       description: "Eclipse Leda provides a Yocto-based build setup for SDV.EDGE components ",
       gh_pages_build_type: "workflow",
       has_discussions: true,
@@ -112,7 +131,9 @@ orgs.newOrg('eclipse-leda') {
       ],
     },
     orgs.newRepo('leda-example-applications') {
+      allow_merge_commit: true,
       allow_update_branch: false,
+      delete_branch_on_merge: false,
       description: "Vehicle application examples and use cases for Eclipse Leda, Velocitas, Kuksa",
       has_projects: false,
       has_wiki: false,
@@ -126,7 +147,9 @@ orgs.newOrg('eclipse-leda') {
       web_commit_signoff_required: false,
     },
     orgs.newRepo('leda-utils') {
+      allow_merge_commit: true,
       allow_update_branch: false,
+      delete_branch_on_merge: false,
       description: "Convenience scripts for Eclipse Leda quickstart tutorials",
       homepage: "https://eclipse-leda.github.io/leda/",
       topics+: [
@@ -137,7 +160,9 @@ orgs.newOrg('eclipse-leda') {
       web_commit_signoff_required: false,
     },
     orgs.newRepo('meta-leda') {
+      allow_merge_commit: true,
       allow_update_branch: false,
+      delete_branch_on_merge: false,
       description: "Yocto / OpenEmbedded Meta-Layers for Eclipse SDV components",
       homepage: "https://eclipse-leda.github.io/leda/",
       topics+: [

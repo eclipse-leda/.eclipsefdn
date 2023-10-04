@@ -63,12 +63,6 @@ orgs.newOrg('eclipse-leda') {
       description: "SDV Cloud Connector for Azure IoT Hub",
       web_commit_signoff_required: false,
     },
-    orgs.newRepo('leda-contrib-container-update-agent') {
-      allow_merge_commit: true,
-      allow_update_branch: false,
-      delete_branch_on_merge: false,
-      web_commit_signoff_required: false,
-    },
     orgs.newRepo('leda-contrib-otel') {
       allow_merge_commit: true,
       allow_update_branch: false,
@@ -93,6 +87,7 @@ orgs.newOrg('eclipse-leda') {
     orgs.newRepo('leda-contrib-vehicle-update-manager') {
       allow_merge_commit: true,
       allow_update_branch: false,
+      archived: true,
       delete_branch_on_merge: false,
       description: "Vehicle Update Manager (VUM)",
       web_commit_signoff_required: false,

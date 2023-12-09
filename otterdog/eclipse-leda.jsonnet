@@ -7,7 +7,6 @@ orgs.newOrg('eclipse-leda') {
     members_can_change_project_visibility: false,
     name: "Eclipse Leda",
     packages_containers_internal: false,
-    plan: "team",
     readers_can_create_discussions: true,
     two_factor_requirement: false,
     web_commit_signoff_required: false,

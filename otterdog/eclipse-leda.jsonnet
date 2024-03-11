@@ -23,7 +23,6 @@ orgs.newOrg('eclipse-leda') {
       gh_pages_source_path: "/",
       web_commit_signoff_required: false,
       workflows+: {
-        actions_can_approve_pull_request_reviews: false,
         default_workflow_permissions: "write",
       },
       environments: [
@@ -53,7 +52,6 @@ orgs.newOrg('eclipse-leda') {
       ],
       web_commit_signoff_required: false,
       workflows+: {
-        actions_can_approve_pull_request_reviews: false,
         default_workflow_permissions: "write",
       },
       environments: [
@@ -67,7 +65,6 @@ orgs.newOrg('eclipse-leda') {
       description: "SDV Cloud Connector for Azure IoT Hub",
       web_commit_signoff_required: false,
       workflows+: {
-        actions_can_approve_pull_request_reviews: false,
         default_workflow_permissions: "write",
       },
     },
@@ -77,7 +74,6 @@ orgs.newOrg('eclipse-leda') {
       delete_branch_on_merge: false,
       web_commit_signoff_required: false,
       workflows+: {
-        actions_can_approve_pull_request_reviews: false,
         default_workflow_permissions: "write",
       },
     },
@@ -88,7 +84,6 @@ orgs.newOrg('eclipse-leda') {
       description: "OpenTelemetry Exporter for Leda",
       web_commit_signoff_required: false,
       workflows+: {
-        actions_can_approve_pull_request_reviews: false,
         default_workflow_permissions: "write",
       },
     },
@@ -106,15 +101,15 @@ orgs.newOrg('eclipse-leda') {
       ],
       web_commit_signoff_required: false,
       workflows+: {
-        actions_can_approve_pull_request_reviews: false,
         default_workflow_permissions: "write",
       },
     },
     orgs.newRepo('leda-contrib-vehicle-update-manager') {
       archived: true,
+      description: "Vehicle Update Manager (VUM)",
+      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
-        actions_can_approve_pull_request_reviews: false,
         default_workflow_permissions: "write",
       },
     },
@@ -124,7 +119,6 @@ orgs.newOrg('eclipse-leda') {
       delete_branch_on_merge: false,
       web_commit_signoff_required: false,
       workflows+: {
-        actions_can_approve_pull_request_reviews: false,
         default_workflow_permissions: "write",
       },
     },
@@ -146,9 +140,6 @@ orgs.newOrg('eclipse-leda') {
         "yocto-layer"
       ],
       web_commit_signoff_required: false,
-      workflows+: {
-        actions_can_approve_pull_request_reviews: false,
-      },
       environments: [
         orgs.newEnvironment('github-pages') {
           branch_policies+: [
@@ -174,7 +165,6 @@ orgs.newOrg('eclipse-leda') {
       ],
       web_commit_signoff_required: false,
       workflows+: {
-        actions_can_approve_pull_request_reviews: false,
         default_workflow_permissions: "write",
       },
     },
@@ -191,7 +181,6 @@ orgs.newOrg('eclipse-leda') {
       ],
       web_commit_signoff_required: false,
       workflows+: {
-        actions_can_approve_pull_request_reviews: false,
         default_workflow_permissions: "write",
       },
     },
@@ -211,7 +200,6 @@ orgs.newOrg('eclipse-leda') {
       ],
       web_commit_signoff_required: false,
       workflows+: {
-        actions_can_approve_pull_request_reviews: false,
         default_workflow_permissions: "write",
       },
     },

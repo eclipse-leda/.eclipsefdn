@@ -2,4 +2,4 @@
 *             @eclipse-leda/eclipsefdn-releng
 
 # Otterdog related configurations are also owned by the security team.
-/otterdog/**  @eclipse-leda/eclipsefdn-security @eclipse-leda/eclipsefdn-releng
+/otterdog/**  @eclipse-leda/eclipsefdn-security

@@ -106,7 +106,6 @@ orgs.newOrg('eclipse-leda') {
     orgs.newRepo('leda-contrib-vehicle-update-manager') {
       archived: true,
       description: "Vehicle Update Manager (VUM)",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",

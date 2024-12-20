@@ -1,6 +1,6 @@
 local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 
-orgs.newOrg('eclipse-leda') {
+orgs.newOrg('automotive.leda', 'eclipse-leda') {
   settings+: {
     description: "",
     name: "Eclipse Leda",
